@@ -8,6 +8,8 @@ export default {
         secondary: "#324B50",
         accent: "#FB923C",
         dark: "#0F172A",
+        white: "#FDFFFF",
+        lightBlue: "#f1f5f9",
       },
     },
   },
