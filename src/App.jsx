@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="mt-[100px]">
+      <main className="mt-[100px] overflow-hidden">
         <Hero />
         <About />
         <Services />

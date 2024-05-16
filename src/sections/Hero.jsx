@@ -19,7 +19,7 @@ const Hero = () => {
       className="h-screen lg:max-w-[1600px] mx-auto flex justify-between px-20"
     >
       <div className="max-w-[600px] h-[530px] my-auto">
-        <h1 className="flex flex-col items-start text-7xl font-semibold">
+        <h1 className="flex flex-col items-start text-7xl">
           <motion.span
             animate={{ opacity: 1 }}
             transition={{ type: "spring", delay: 0, duration: 2 }}
@@ -28,7 +28,7 @@ const Hero = () => {
             Bem vindo à
           </motion.span>
           <motion.span
-            className="opacity-0 relative"
+            className="opacity-0 relative font-medium"
             animate={{ opacity: 1 }}
             transition={{ type: "spring", delay: 1, duration: 2 }}
           >
