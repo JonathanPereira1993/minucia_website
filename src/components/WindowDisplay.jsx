@@ -15,7 +15,7 @@ import { useState } from "react";
 const WindowDisplay = () => {
   const [selectedItem, setSelectedItem] = useState(0);
 
-  let slideAnimation = {
+  const slideAnimation = {
     hidden: {
       opacity: 0,
     },
@@ -108,8 +108,8 @@ const WindowDisplay = () => {
           className={`${
             selectedItem === 0
               ? "border-2 border-accent shadow-md"
-              : "border shadow-sm"
-          } rounded-2xl duration-50 hover:border-2 border-primary hover:border-accent flex items-center justify-center bg-white w-[64px] h-[64px]`}
+              : "border border-primary shadow-sm"
+          } rounded-2xl duration-50 hover:border-2 hover:border-accent flex items-center justify-center bg-white w-[64px] h-[64px]`}
         >
           <img src={AboutUs} alt="About us button" />
         </button>
@@ -118,8 +118,8 @@ const WindowDisplay = () => {
           className={`${
             selectedItem === 1
               ? "border-2 border-accent shadow-md"
-              : "border shadow-sm"
-          } rounded-2xl duration-50 hover:border-2 border-primary hover:border-accent flex items-center justify-center bg-white w-[64px] h-[64px]`}
+              : "border border-primary shadow-sm"
+          } rounded-2xl duration-50 hover:border-2 hover:border-accent flex items-center justify-center bg-white w-[64px] h-[64px]`}
         >
           <img src={MissionValues} alt="About us button" />
         </button>
@@ -128,8 +128,8 @@ const WindowDisplay = () => {
           className={`${
             selectedItem === 2
               ? "border-2 border-accent shadow-md"
-              : "border shadow-sm"
-          } rounded-2xl duration-50 hover:border-2 border-primary hover:border-accent flex items-center justify-center bg-white w-[64px] h-[64px]`}
+              : "border border-primary shadow-sm"
+          } rounded-2xl duration-50 hover:border-2 hover:border-accent flex items-center justify-center bg-white w-[64px] h-[64px]`}
         >
           <img src={Values} alt="About us button" />
         </button>
@@ -138,8 +138,8 @@ const WindowDisplay = () => {
           className={`${
             selectedItem === 3
               ? "border-2 border-accent shadow-md"
-              : "border shadow-sm"
-          } rounded-2xl duration-50 hover:border-2 border-primary hover:border-accent flex items-center justify-center bg-white w-[64px] h-[64px]`}
+              : "border border-primary shadow-sm"
+          } rounded-2xl duration-50 hover:border-2 hover:border-accent flex items-center justify-center bg-white w-[64px] h-[64px]`}
         >
           <img src={Tools} alt="About us button" />
         </button>

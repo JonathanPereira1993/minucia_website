@@ -38,7 +38,7 @@ const About = () => {
             alt="Blue bean"
           />
         </div>
-        <h2 className="text-center z-20 flex justify-center text-6xl font-medium relative">
+        <h2 className="text-center z-20 flex justify-center text-6xl font-semibold relative">
           <span className="z-10">A Minucia</span>
           <img
             className="absolute bottom-0 left-1/2 translate-y-[4px] -translate-x-[170px] z-0"
