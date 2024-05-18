@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const WindowDisplayItem = ({ title, description, className }) => {
   return (
     <div
@@ -11,6 +13,13 @@ const WindowDisplayItem = ({ title, description, className }) => {
       </p>
     </div>
   );
+};
+
+// Props Validation
+WindowDisplayItem.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default WindowDisplayItem;

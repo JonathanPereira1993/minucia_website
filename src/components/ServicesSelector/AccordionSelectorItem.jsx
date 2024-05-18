@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const AccordionSelectorItem = ({
   onClick,
@@ -45,6 +46,14 @@ const AccordionSelectorItem = ({
       </motion.div>
     </div>
   );
+};
+
+// Props Validation
+AccordionSelectorItem.propTypes = {
+  onClick: () => {},
+  headerTitle: PropTypes.string,
+  content: PropTypes.string,
+  isSelected: PropTypes.bool,
 };
 
 export default AccordionSelectorItem;

@@ -18,4 +18,9 @@ const ServiceSelectorProvider = ({ children }) => {
   );
 };
 
+// Props Validation
+ServiceSelectorProvider.propTypes = {
+  children: () => {},
+};
+
 export default ServiceSelectorProvider;
