@@ -9,7 +9,7 @@ import WindowDisplay from "../components/WindowDisplay";
 
 const About = () => {
   return (
-    <section id="about-section" className="bg-lightBlue h-screen">
+    <section id="about-section" className="bg-lightBlue pt-20 pb-40">
       <div className="lg:max-w-[1600px] mx-auto relative py-20">
         <div className="z-0 translate-y-[160px]">
           <img

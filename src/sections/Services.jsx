@@ -2,13 +2,11 @@ import BlueUnderline from "../assets/Underlines/BlueUnderline.svg";
 import AccordionSelector from "../components/ServicesSelector/AccordionSelector";
 
 import PhoneSelector from "../components/ServicesSelector/PhoneSelector";
-import ServiceSelectorProvider, {
-  ServiceSelectorContext,
-} from "../components/ServicesSelector/ServideSelectorContext";
+import ServiceSelectorProvider from "../components/ServicesSelector/ServideSelectorContext";
 
 const Services = () => {
   return (
-    <section id="service-section" className="h-screen">
+    <section id="service-section" className="py-20">
       <div className="lg:max-w-[1600px] mx-auto relative py-20">
         <h2 className="text-center z-20 flex justify-center text-6xl font-semibold relative">
           <span className="z-10">Serviços</span>

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
 const AccordionSelectorItem = ({
@@ -7,22 +6,6 @@ const AccordionSelectorItem = ({
   content,
   isSelected,
 }) => {
-  const accordionAnimation = {
-    hidden: {
-      height: "0",
-    },
-    visible: {
-      height: "100%",
-      transition: {
-        duration: 0.5,
-        type: "spring",
-      },
-    },
-    exit: {
-      height: "0",
-    },
-  };
-
   return (
     <div className="relative pl-12">
       <div
@@ -32,18 +15,13 @@ const AccordionSelectorItem = ({
       <div onClick={onClick} className="text-xl pt-1 pb-4 cursor-pointer">
         {headerTitle}
       </div>
-      <motion.div
-        variants={accordionAnimation}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        transition={{ duration: 2, type: "spring" }}
-        className={`overflow-hidden transition-all duration-300 font-light ${
-          isSelected ? "" : "h-0"
+      <div
+        className={`overflow-hidden transition-height flex duration-300 font-light ${
+          isSelected ? "h-full" : "h-0"
         }`}
       >
         {content}
-      </motion.div>
+      </div>
     </div>
   );
 };
