@@ -4,6 +4,7 @@ import RadioGroup from "../components/ui/RadioGroup";
 
 import EmailSVG from "../assets/CustomIcons/EmailIcon.svg";
 import LocalSVG from "../assets/CustomIcons/Local.svg";
+import Button from "../components/ui/Button";
 
 const Contacts = () => {
   return (
@@ -47,6 +48,9 @@ const Contacts = () => {
           <Input id="name" placeholder="O seu nome" />
           <Input id="email" placeholder="O seu e-mail" />
           <Input id="message" placeholder="A sua mensagem" />
+          <Button>
+            Enviar Mensagem
+          </Button>
         </form>
       </div>
     </section>

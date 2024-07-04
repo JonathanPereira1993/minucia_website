@@ -5,7 +5,7 @@ const Input = ({ label, id, error, ...props }) => {
     <div className="w-full">
       {label !== undefined && <label htmlFor={id}>{label}</label>}
       <input
-        className="border-b-2 w-full placeholder:text-[#B4BCBD] h-9"
+        className="border-b-2 w-full focus-visible:outline-none placeholder:text-[#B4BCBD] h-9"
         id={id}
         {...props}
       />
