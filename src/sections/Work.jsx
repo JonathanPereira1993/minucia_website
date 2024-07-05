@@ -1,13 +1,24 @@
 import { FaArrowRight } from "react-icons/fa6";
 import Button from "../components/ui/Button";
 
+import { minuciaProjects } from "../constants";
+
 const Work = () => {
   return (
     <section id="work-section" className="bg-lightBlue py-20">
       <div className="lg:max-w-[1600px] mx-auto relative py-20">
         <div>
-          <div className="grid grid-cols-2 h-full">
-            <div></div>
+          <div className="grid grid-cols-2 gap-20 h-full">
+            <div className="grid grid-cols-3 grid-rows-3 gap-6">
+              {minuciaProjects.map((item) => (
+                <img
+                  className="rounded-lg"
+                  key={item.id}
+                  src={item.image}
+                  alt={item.title}
+                />
+              ))}
+            </div>
             <div className="flex flex-col justify-center h-full">
               <h2 className="text-6xl font-semibold leading-[61px] mb-10">
                 Conheça os nossos projetos
