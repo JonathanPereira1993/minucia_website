@@ -1,8 +1,9 @@
 import Color_MinuciaLogo from "../assets/Logos/MinuciaLogo_Color.svg";
 
-import Button from "./ui/Button";
+import { NavLink } from "react-router-dom";
 
 import { navLinks } from "../constants";
+import Button from "./ui/Button";
 
 const Header = () => {
   return (
@@ -18,9 +19,16 @@ const Header = () => {
         <ul className="flex items-center flex-1 gap-6 justify-center h-full max-lg:hidden">
           {navLinks.map((link) => (
             <li key={link.label} className="h-full px-6 group relative">
-              <a href={link.href} className="h-full flex items-center">
-                {link.label}
-              </a>
+              {link.isScrollable ? (
+                <a href={link.href} className="h-full flex items-center">
+                  {link.label}
+                </a>
+              ) : (
+                <NavLink className="h-full flex items-center" to={link.href}>
+                  {link.label}
+                </NavLink>
+              )}
+
               <div className="group-hover:opacity-100 rounded-t-sm duration-300 opacity-0 h-1 absolute bottom-0 left-0 right-0 bg-primary" />
             </li>
           ))}
