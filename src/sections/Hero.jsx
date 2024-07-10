@@ -60,7 +60,10 @@ const Hero = () => {
           transition={{ type: "spring", delay: 2, duration: 2 }}
           className="flex items-center justify-between mt-10 opacity-0"
         >
-          <Button className="px-7 py-3 min-w-[244px] text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md">
+          <Button
+            href="#contact-section"
+            className="px-7 py-3 min-w-[244px] text-center text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md"
+          >
             Contacte-nos
           </Button>
           <Button className="group flex items-center gap-6 text-[#3B8291] text-xl min-w-[244px]">

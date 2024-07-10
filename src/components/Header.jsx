@@ -33,7 +33,10 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <Button className="px-7 py-3 rounded-lg border-2 border-[#2B2D2E] duration-200 hover:shadow-md hover:border-primary hover:text-white hover:bg-primary">
+        <Button
+          href="#contact-section"
+          className="px-7 py-3 rounded-lg border-2 border-[#2B2D2E] duration-200 hover:shadow-md hover:border-primary hover:text-white hover:bg-primary"
+        >
           Contacte-nos
         </Button>
       </nav>

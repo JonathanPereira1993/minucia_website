@@ -1,7 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import FAQ from "./Pages/FAQ";
-import Projects from "./Pages/Projects";
+// import FAQ from "./Pages/FAQ";
+// import Projects from "./Pages/Projects";
 import About from "./sections/About";
 import Contacts from "./sections/Contacts";
 import Feedback from "./sections/Feedback";
@@ -19,8 +19,8 @@ function App() {
         <About />
         <Services />
         <Routes>
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/faq" element={<FAQ />} />
+          {/* <Route path="/projects" element={<Projects />} /> */}
+          {/* <Route path="/faq" element={<FAQ />} /> */}
         </Routes>
         <Feedback />
         <Contacts />

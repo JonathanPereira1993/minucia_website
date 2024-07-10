@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 
 const Button = ({ children, className, ...props }) => {
   return (
-    <button className={className} {...props}>
+    <a type="button" className={`${className} cursor-pointer`} {...props}>
       {children}
-    </button>
+    </a>
   );
 };
 
