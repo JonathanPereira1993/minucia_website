@@ -6,6 +6,8 @@ import EmailSVG from "../assets/CustomIcons/EmailIcon.svg";
 import LocalSVG from "../assets/CustomIcons/Local.svg";
 import Button from "../components/ui/Button";
 
+import { FiSend } from "react-icons/fi";
+
 const Contacts = () => {
   return (
     <section id="contact-section" className="py-20 bg-lightBlue">
@@ -43,12 +45,20 @@ const Contacts = () => {
             <RadioButton label="Alojamento & Domínio" value="domain" />
             <RadioButton label="UX/UI Design" value="UX-UI-design" />
             <RadioButton label="Design Gráfico" value="graphic-design" />
+            <RadioButton label="Outro" value="other" />
           </RadioGroup>
 
           <Input id="name" placeholder="O seu nome" />
           <Input id="email" placeholder="O seu e-mail" />
-          <Input id="message" placeholder="A sua mensagem" />
-          <Button>
+          <Input
+            isTextArea
+            cols="50"
+            rows="50"
+            id="message"
+            placeholder="A sua mensagem"
+          />
+          <Button className="px-8 mt-4 gap-4 py-4 w-fit flex justify-center items-center text-center h-16 text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md">
+            <FiSend />
             Enviar Mensagem
           </Button>
         </form>

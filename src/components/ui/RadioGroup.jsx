@@ -30,7 +30,7 @@ const RadioGroup = ({ children, label = "", checkedValue = "" }) => {
   };
 
   return (
-    <div className="mt-4" role="radiogroup" aria-label={label}>
+    <div className="mt-2" role="radiogroup" aria-label={label}>
       <p className="radio-group__label">{label}</p>
       <div
         className="flex gap-3 flex-wrap"

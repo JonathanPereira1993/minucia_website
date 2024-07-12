@@ -19,31 +19,31 @@ const AccordionSelector = () => {
         onClick={() => handleSelected(1)}
         isSelected={selected === 1 && true}
         headerTitle="Landing Pages"
-        content="Construímos lojas online de excelência, potenciando vendas e sucesso. Sendo especialistas em desenvolvimento web, oferecemos soluções eficazes, desde design intuitivo até segurança robusta, para impulsionar o seu negócio online."
+        content="Desenvolvemos landing pages otimizadas para conversões. Criamos experiências cativantes desde a primeira visita, impulsionando a captação de leads e maximizando o impacto nos resultados do seu negócio."
       />
       <AccordionSelectorItem
         onClick={() => handleSelected(2)}
         isSelected={selected === 2 && true}
         headerTitle="Sites Corporativos"
-        content="Construímos lojas online de excelência, potenciando vendas e sucesso. Sendo especialistas em desenvolvimento web, oferecemos soluções eficazes, desde design intuitivo até segurança robusta, para impulsionar o seu negócio online."
+        content="Criamos websites corporativos focados em destacar a sua marca e afirmar uma presença online impactante e eficaz para o seu negócio."
       />
       <AccordionSelectorItem
         onClick={() => handleSelected(3)}
         isSelected={selected === 3 && true}
         headerTitle="Alojamentos e Dominios"
-        content="Construímos lojas online de excelência, potenciando vendas e sucesso. Sendo especialistas em desenvolvimento web, oferecemos soluções eficazes, desde design intuitivo até segurança robusta, para impulsionar o seu negócio online."
+        content="Com expertise em web hosting, proporcionamos soluções robustas e confiáveis para garantir a presença online eficiente e segura do seu projeto."
       />
       <AccordionSelectorItem
         onClick={() => handleSelected(4)}
         isSelected={selected === 4 && true}
         headerTitle="UX/UI Design"
-        content="Construímos lojas online de excelência, potenciando vendas e sucesso. Sendo especialistas em desenvolvimento web, oferecemos soluções eficazes, desde design intuitivo até segurança robusta, para impulsionar o seu negócio online."
+        content="Priorizamos a usabilidade, e estudamos as necessidades do utilizador para desenvolver experiências positivas que elevam a satisfação e eficiência em cada interação."
       />
       <AccordionSelectorItem
         onClick={() => handleSelected(5)}
         isSelected={selected === 5 && true}
         headerTitle="Design Grafico"
-        content="Construímos lojas online de excelência, potenciando vendas e sucesso. Sendo especialistas em desenvolvimento web, oferecemos soluções eficazes, desde design intuitivo até segurança robusta, para impulsionar o seu negócio online."
+        content=" Criamos identidades visuais impactantes, materiais promocionais envolventes e elementos gráficos consistentes para transmitir a mensagem da sua marca de forma eficaz e memorável."
       />
     </div>
   );

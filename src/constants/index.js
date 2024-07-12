@@ -30,8 +30,8 @@ export const navLinks = [
     label: "Testemunhos",
   },
   {
-    isScrollable: false,
-    href: "/faq",
+    isScrollable: true,
+    href: "#faq-section",
     label: "FAQ's",
   },
 ];
@@ -46,19 +46,19 @@ export const aboutItems = [
   },
   {
     id: 1,
-    title: "Teste 2",
+    title: "A nossa visão e missão",
     description:
       "Lorem ipsum dolor sit amet consectetur. Et quis rutrum hac diam sagittis viverra. Aliquet aliquam ipsum metus arcu amet purus. Tortor turpis morbi leo porttitor odio sed urna felis cras. Nec ornare feugiat in ornare diam in.",
   },
   {
     id: 2,
-    title: "Teste 3",
+    title: "Os nossos valores",
     description:
       "Lorem ipsum dolor sit amet consectetur. Et quis rutrum hac diam sagittis viverra. Aliquet aliquam ipsum metus arcu amet purus. Tortor turpis morbi leo porttitor odio sed urna felis cras. Nec ornare feugiat in ornare diam in.",
   },
   {
     id: 3,
-    title: "Teste 4",
+    title: "O nosso método de trabalho",
     description:
       "Lorem ipsum dolor sit amet consectetur. Et quis rutrum hac diam sagittis viverra. Aliquet aliquam ipsum metus arcu amet purus. Tortor turpis morbi leo porttitor odio sed urna felis cras. Nec ornare feugiat in ornare diam in.",
   },
