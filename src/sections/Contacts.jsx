@@ -11,7 +11,7 @@ import { FiSend } from "react-icons/fi";
 const Contacts = () => {
   return (
     <section id="contact-section" className="py-20 bg-lightBlue">
-      <div className="flex gap-10 max-w-[500px] items-center lg:max-w-[1600px] mx-auto relative">
+      <div className="flex gap-10 max-w-[500px] items-center lg:max-w-[1600px] mx-auto px-10 relative">
         <div className="px-4 w-full max-w-[700px]">
           <h2 className="font-semibold text-5xl leading-[72px] mb-20">
             Vamos tratar do seu <span className="text-accent">negócio</span>{" "}

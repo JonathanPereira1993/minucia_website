@@ -1,13 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-// import Projects from "./Pages/Projects";
-import About from "./sections/About";
-import Contacts from "./sections/Contacts";
-import FAQ from "./sections/FAQ";
-import Feedback from "./sections/Feedback";
-import Hero from "./sections/Hero";
-import Services from "./sections/Services";
-import Work from "./sections/Work";
+import Minucia from "./Pages/Minucia";
+import Projects from "./Pages/Projects";
 
 // Chakra UI
 import { ChakraProvider } from "@chakra-ui/react";
@@ -20,16 +14,10 @@ function App() {
       <Router>
         <Header />
         <main className="mt-[100px] overflow-hidden">
-          <Hero />
-          <About />
-          <Services />
-          {/* <Routes>
+          <Routes>
+            <Route path="/" element={<Minucia />} />
             <Route path="/projects" element={<Projects />} />
-          </Routes> */}
-          <Work />
-          <Feedback />
-          <Contacts />
-          <FAQ />
+          </Routes>
         </main>
         <Footer />
       </Router>

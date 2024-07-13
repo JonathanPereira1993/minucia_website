@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
 import Button from "../components/ui/Button";
 
+import { useNavigate } from "react-router-dom";
+
+import { ScrollTo } from "../components/CustomFuntions/CustomFunctions";
+
 // Images (Shapes)
 import TreeDBox from "../assets/CustomIcons/3DBox.svg";
 import CodeSymbol from "../assets/CustomIcons/SymbolCode.svg";
@@ -13,10 +17,20 @@ import OrangeMiniShapes2 from "../assets/Shapes/OrangeMiniShapes2.svg";
 import BlueUnderline from "../assets/Underlines/BlueUnderline.svg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/projects");
+  };
+
+  const scrollTo = (sectionId) => {
+    ScrollTo(sectionId);
+  };
+
   return (
     <section
       id="hero-section"
-      className="h-screen lg:max-w-[1600px] mx-auto flex justify-between px-20"
+      className="py-40 lg:max-w-[1600px] mx-auto flex justify-between px-20"
     >
       <div className="max-w-[600px] h-[530px] my-auto">
         <h1 className="flex flex-col items-start text-7xl">
@@ -58,15 +72,22 @@ const Hero = () => {
         <motion.div
           animate={{ opacity: 1 }}
           transition={{ type: "spring", delay: 2, duration: 2 }}
-          className="flex items-center justify-between mt-10 opacity-0"
+          className="flex items-center justify-between mt-10 gap-10 opacity-0"
         >
           <Button
-            href="#contact-section"
+            onClick={() => {
+              scrollTo("contact-section");
+            }}
             className="px-7 py-3 min-w-[244px] text-center text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md"
           >
             Contacte-nos
           </Button>
-          <Button className="group flex items-center gap-6 text-[#3B8291] text-xl min-w-[244px]">
+          <Button
+            onClick={() => {
+              handleClick();
+            }}
+            className="group flex items-center gap-6 text-[#3B8291] text-xl min-w-[244px]"
+          >
             Os nossos projetos
             <FaArrowRight className="text-accent duration-300 group-hover:translate-x-2" />
           </Button>

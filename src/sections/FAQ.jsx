@@ -11,7 +11,7 @@ import {
 const FAQ = () => {
   return (
     <section id="faq-section" className="py-4">
-      <div className="lg:max-w-[1600px] mx-auto relative py-20">
+      <div className="lg:max-w-[1600px] mx-auto relative px-10 py-20">
         <h2 className="text-center z-20 flex justify-center text-6xl font-semibold relative">
           <span className="z-10">Perguntas Frequentes</span>
           <img

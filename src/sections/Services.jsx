@@ -7,7 +7,7 @@ import ServiceSelectorProvider from "../components/ServicesSelector/ServideSelec
 const Services = () => {
   return (
     <section id="service-section" className="py-20">
-      <div className="lg:max-w-[1600px] mx-auto relative py-20">
+      <div className="lg:max-w-[1600px] mx-auto px-10 relative">
         <h2 className="text-center z-20 flex justify-center text-6xl font-semibold relative">
           <span className="z-10">Serviços</span>
           <img

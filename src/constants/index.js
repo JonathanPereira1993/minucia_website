@@ -10,28 +10,27 @@ import UserTestFeedback from "../assets/Feedback/UserThumb.png";
 
 export const navLinks = [
   {
-    isScrollable: true,
-    href: "#about-section",
+    page: "/",
+    href: "hero-section",
     label: "A Minucia",
   },
   {
-    isScrollable: true,
-    href: "#service-section",
+    page: "/",
+    href: "service-section",
     label: "Serviços",
   },
   {
-    isScrollable: false,
-    href: "/projects",
+    page: "/projects",
     label: "Projetos",
   },
   {
-    isScrollable: true,
-    href: "#feedback-section",
+    page: "/",
+    href: "feedback-section",
     label: "Testemunhos",
   },
   {
-    isScrollable: true,
-    href: "#faq-section",
+    page: "/",
+    href: "faq-section",
     label: "FAQ's",
   },
 ];

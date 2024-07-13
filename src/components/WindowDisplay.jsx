@@ -43,8 +43,6 @@ const WindowDisplay = () => {
     }
   };
 
-  console.log(selectedItem);
-
   return (
     <div>
       <div className="z-10 relative max-w-[1200px] overflow-hidden rounded-xl shadow-lg mx-auto">

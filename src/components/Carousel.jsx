@@ -14,7 +14,6 @@ const Carousel = ({ slides }) => {
   let visibleSlides = 5;
 
   let slidesPercentage = 100 / (slides.length - 1);
-  console.log(slides.length - 1);
 
   const previousSlide = () => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -99,7 +98,7 @@ const Carousel = ({ slides }) => {
 
   return (
     <div className="overflow-hidden py-6 relative">
-      <div className="flex justify-between lg:max-w-[1600px] mx-auto">
+      <div className="flex justify-between lg:max-w-[1600px] px-10 mx-auto">
         <h2 className="font-semibold text-5xl leading-[72px] mb-10">
           O que os nossos clientes dizem
         </h2>
