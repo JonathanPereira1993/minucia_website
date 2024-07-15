@@ -30,9 +30,9 @@ const Hero = () => {
   return (
     <section
       id="hero-section"
-      className="py-40 lg:max-w-[1600px] mx-auto flex justify-between px-20"
+      className="py-40 max-lg:pt-20 lg:max-w-[1600px] mx-auto flex justify-between px-20 max-lg:px-10"
     >
-      <div className="max-w-[600px] h-[530px] my-auto">
+      <div className="lg:max-w-[600px] max-lg:max-w-full h-[530px] my-auto max-lg:mx-auto">
         <h1 className="flex flex-col items-start text-7xl">
           <motion.span
             animate={{ opacity: 1 }}
@@ -54,7 +54,7 @@ const Hero = () => {
             />
           </motion.span>
           <motion.span
-            className="opacity-0 font-normal text-6xl mt-1"
+            className="opacity-0 font-normal text-6xl max-lg:text-4xl mt-1"
             animate={{ opacity: 1 }}
             transition={{ type: "spring", delay: 1.5, duration: 2 }}
           >
@@ -72,13 +72,13 @@ const Hero = () => {
         <motion.div
           animate={{ opacity: 1 }}
           transition={{ type: "spring", delay: 2, duration: 2 }}
-          className="flex items-center justify-between mt-10 gap-10 opacity-0"
+          className="flex items-center max-lg:flex-col justify-between mt-10 gap-10 opacity-0"
         >
           <Button
             onClick={() => {
               scrollTo("contact-section");
             }}
-            className="px-7 py-3 min-w-[244px] text-center text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md"
+            className="px-7 py-3 min-w-[244px] max-lg:w-full text-center text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md"
           >
             Contacte-nos
           </Button>
@@ -86,14 +86,14 @@ const Hero = () => {
             onClick={() => {
               handleClick();
             }}
-            className="group flex items-center gap-6 text-[#3B8291] text-xl min-w-[244px]"
+            className="group max-lg:w-full max-lg:justify-center text-center items-center flex gap-6 text-[#3B8291] text-xl min-w-[244px]"
           >
             Os nossos projetos
             <FaArrowRight className="text-accent duration-300 group-hover:translate-x-2" />
           </Button>
         </motion.div>
       </div>
-      <div className="relative w-[620px] h-[530px] my-auto">
+      <div className="relative max-lg:hidden w-[620px] h-[530px] my-auto">
         <motion.img
           className="opacity-0 absolute left-0 bottom-0"
           animate={{ opacity: 1, y: 50, x: -10 }}

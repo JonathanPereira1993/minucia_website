@@ -6,7 +6,7 @@ import ServiceSelectorProvider from "../components/ServicesSelector/ServideSelec
 
 const Services = () => {
   return (
-    <section id="service-section" className="py-20">
+    <section id="service-section" className="py-20 max-lg:py-10">
       <div className="lg:max-w-[1600px] mx-auto px-10 relative">
         <h2 className="text-center z-20 flex justify-center text-6xl font-semibold relative">
           <span className="z-10">Serviços</span>
@@ -16,13 +16,13 @@ const Services = () => {
             alt="Small orange underline"
           />
         </h2>
-        <p className="text-center relative z-20 mt-10 mb-20">
+        <p className="text-center relative z-20 mt-10 mb-20 max-lg:mb-10">
           Eget at purus mauris euismod metus vitae eget. Diam massa venenatis
           pellentesque facilisis nunc, varius.
         </p>
 
         <ServiceSelectorProvider>
-          <div className="mt-[100px] grid grid-cols-2">
+          <div className="mt-[100px] max-lg:mt-10 grid lg:grid-cols-2">
             <PhoneSelector />
             <AccordionSelector />
           </div>

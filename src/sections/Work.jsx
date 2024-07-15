@@ -12,11 +12,11 @@ const Work = () => {
     navigate("/projects");
   };
   return (
-    <section id="work-section" className="bg-lightBlue py-20">
-      <div className="lg:max-w-[1600px] mx-auto relative px-10 py-20">
+    <section id="work-section" className="bg-lightBlue py-20 max-lg:py-10">
+      <div className="lg:max-w-[1600px] mx-auto relative px-10 py-20 max-lg:py-10">
         <div>
-          <div className="grid grid-cols-2 gap-20 h-full">
-            <div className="grid grid-cols-3 grid-rows-3 gap-6">
+          <div className="grid lg:grid-cols-2 gap-20 h-full">
+            <div className="grid grid-cols-3 grid-rows-3 gap-6 max-lg:hidden">
               {minuciaProjects.map((item) => (
                 <img
                   className="rounded-lg"

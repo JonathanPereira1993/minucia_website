@@ -46,16 +46,16 @@ const WindowDisplay = () => {
   return (
     <div>
       <div className="z-10 relative max-w-[1200px] overflow-hidden rounded-xl shadow-lg mx-auto">
-        <div className="h-[40px] rounded-t-xl bg-white flex justify-between items-center px-4">
-          <div className="flex items-center gap-2">
+        <div className="h-[40px] rounded-t-xl max-lg:hidden bg-white flex justify-between items-center px-4">
+          <div className="flex max-lg:hidden items-center gap-2">
             <div className="w-[10px] h-[10px] bg-red-500 rounded-full cursor-pointer hover:brightness-110" />
             <div className="w-[10px] h-[10px] bg-yellow-500 rounded-full cursor-pointer hover:brightness-110" />
             <div className="w-[10px] h-[10px] bg-green-500 rounded-full cursor-pointer hover:brightness-110" />
           </div>
-          <div className="bg-lightBlue text-[#94A3B8] font-light w-[40%] text-center rounded-md">
+          <div className="bg-lightBlue max-lg:w-1/2 text-[#94A3B8] font-light w-[40%] text-center rounded-md">
             minucia.pt
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 max-lg:hidden">
             <button
               className={`${
                 selectedItem <= 0
@@ -78,7 +78,7 @@ const WindowDisplay = () => {
             </button>
           </div>
         </div>
-        <div className="h-[600px] relative flex items-center justify-center bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] opacity-90 backdrop-blur-[19px]">
+        <div className="min-h-[600px] max-lg:min-h-[400px] relative flex items-center justify-center bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] opacity-90 backdrop-blur-[19px]">
           <AnimatePresence node="wait">
             {aboutItems.map((item, index) =>
               index === selectedItem ? (
@@ -100,7 +100,7 @@ const WindowDisplay = () => {
           </AnimatePresence>
         </div>
       </div>
-      <div className="absolute left-1/2 -translate-x-1/2 w-[50%] flex items-center justify-between -bottom-10">
+      <div className="absolute max-lg:px-10 left-1/2 -translate-x-1/2 w-[50%] max-lg:w-full flex items-center justify-between -bottom-10">
         <button
           onClick={() => setSelectedItem(0)}
           className={`${

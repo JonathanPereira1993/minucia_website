@@ -6,7 +6,7 @@ const PhoneSelector = () => {
   const { selected, handleSelected } = useContext(ServiceSelectorContext);
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center max-lg:hidden">
       <div className="border-[#3B8291] border-8 rounded-full w-[416px] h-[416px] absolute z-10" />
       <div className="border-[#3B8291] border rounded-full w-[550px] h-[550px] absolute z-10" />
       <div className="z-20 relative">
