@@ -7,6 +7,7 @@ import LocalSVG from "../assets/CustomIcons/Local.svg";
 import Button from "../components/ui/Button";
 
 import { FiSend } from "react-icons/fi";
+import { IoLogoInstagram } from "react-icons/io5";
 
 const Contacts = () => {
   return (
@@ -18,19 +19,26 @@ const Contacts = () => {
             juntos?
           </h2>
 
-          <span className="flex text-xl gap-4 mb-16 items-center">
-            <img src={EmailSVG} alt="" />
+          <span className="flex text-xl gap-4 mb-10 items-center">
+            <img src={EmailSVG} alt="Email geral da minucia" />
             <a className="hover:underline" href="mailto:geral@minucia.pt">
               geral@minucia.pt
             </a>
           </span>
 
-          <span className="flex text-xl gap-4 mb-10 items-center">
-            <img src={LocalSVG} alt="" />
-            <a className="hover:underline" href="">
-              Leiria, Portugal
-            </a>
+          <span className="flex text-xl gap-4 mb-20 items-center">
+            <img src={LocalSVG} alt="Localidade" />
+            <a>Leiria, Portugal</a>
           </span>
+
+          <div className="flex items-center gap-10">
+            <a
+              className="size-14 shadow-md flex justify-center rounded-[5px] items-center border-2 duration-150 border-primary hover:bg-primary text-primary hover:text-white"
+              href="https://www.instagram.com/minucia.pt/"
+            >
+              <IoLogoInstagram className="size-6" />
+            </a>
+          </div>
         </div>
 
         <form
@@ -38,7 +46,7 @@ const Contacts = () => {
           action="submit"
         >
           <label className="text-xl">Tenho interesse em serviços de...</label>
-          <RadioGroup checkedValue="online-shop">
+          <RadioGroup checkedValue="other">
             <RadioButton label="Loja Online" value="online-shop" />
             <RadioButton label="Landing Page" value="landing-page" />
             <RadioButton label="Site Corporativo" value="corporative-site" />

@@ -29,3 +29,9 @@ body {
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
 }
+
+/* Css for the carousel */
+.slick-track > .slick-slide > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
