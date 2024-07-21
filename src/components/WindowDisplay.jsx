@@ -100,7 +100,7 @@ const WindowDisplay = () => {
           </AnimatePresence>
         </div>
       </div>
-      <div className="absolute max-lg:px-10 left-1/2 -translate-x-1/2 w-[50%] max-lg:w-full flex items-center justify-between -bottom-10">
+      <div className="absolute max-lg:px-10 left-1/2 -translate-x-1/2 w-[50%] max-lg:w-full flex items-center justify-between max-lg:-bottom-20 -bottom-10">
         <button
           onClick={() => setSelectedItem(0)}
           className={`${

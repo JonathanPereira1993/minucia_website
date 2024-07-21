@@ -7,7 +7,7 @@ const RadioButton = ({ label, value }) => {
       role="radio"
       aria-checked={"false"}
       tabIndex="-1"
-      className="border text-xl hover:shadow-md duration-300 border-[#EAEAEA] text-[#8B9293] font-light rounded-lg whitespace-nowrap py-3 px-6 aria-checked:border-primary aria-checked:bg-primary aria-checked:text-white"
+      className="border text-xl max-lg:text-lg hover:shadow-md duration-300 border-[#EAEAEA] text-[#8B9293] font-light rounded-lg whitespace-nowrap py-3 max-lg:px-4 px-6 aria-checked:border-primary aria-checked:bg-primary aria-checked:text-white"
       data-label={label}
       data-value={value}
     >
