@@ -11,7 +11,7 @@ import UserTestFeedback from "../assets/Feedback/UserThumb.png";
 export const navLinks = [
   {
     page: "/",
-    href: "hero-section",
+    href: "about-section",
     label: "A Minucia",
   },
   {

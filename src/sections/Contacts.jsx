@@ -9,7 +9,34 @@ import Button from "../components/ui/Button";
 import { FiSend } from "react-icons/fi";
 import { IoLogoInstagram } from "react-icons/io5";
 
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
 const Contacts = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact-section" className="py-20 bg-lightBlue">
       <div className="flex max-lg:flex-col gap-10 max-w-[500px] items-center lg:max-w-[1600px] mx-auto px-10 relative">
@@ -42,6 +69,8 @@ const Contacts = () => {
         </div>
 
         <form
+          ref={form}
+          onSubmit={sendEmail}
           className="bg-white max-w-[700px] flex gap-10 flex-col rounded-xl shadow-xl max-lg:p-6 p-12"
           action="submit"
         >
@@ -56,16 +85,20 @@ const Contacts = () => {
             <RadioButton label="Outro" value="other" />
           </RadioGroup>
 
-          <Input id="name" placeholder="O seu nome" />
-          <Input id="email" placeholder="O seu e-mail" />
+          <Input id="name" name="user_name" placeholder="O seu nome" />
+          <Input id="email" name="user_email" placeholder="O seu e-mail" />
           <Input
             isTextArea
             cols="50"
             rows="50"
             id="message"
+            name="message"
             placeholder="A sua mensagem"
           />
-          <Button className="px-8 mt-4 gap-4 py-4 w-fit max-lg:w-full flex justify-center items-center text-center h-16 text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md">
+          <Button
+            type="submit"
+            className="px-8 mt-4 gap-4 py-4 w-fit max-lg:w-full flex justify-center items-center text-center h-16 text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md"
+          >
             <FiSend />
             Enviar Mensagem
           </Button>
