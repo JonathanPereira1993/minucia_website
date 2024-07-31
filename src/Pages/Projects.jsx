@@ -5,7 +5,7 @@ import PortfolioCard from "../components/PortfolioCard";
 const Projects = () => {
   return (
     <section id="service-section" className="py-20">
-      <div className="lg:max-w-[1600px] mx-auto relative">
+      <div className="lg:max-w-[1600px] mx-auto relative px-10">
         <h2 className="text-center mb-20 z-20 flex justify-center text-6xl font-semibold relative">
           <span className="z-10">Projetos</span>
           <img
@@ -14,7 +14,9 @@ const Projects = () => {
             alt="Small orange underline"
           />
         </h2>
-        <div className="space-y-8">
+        <div className="grid max-xl:grid-cols-1 grid-cols-2 gap-8">
+          <PortfolioCard />
+          <PortfolioCard />
           <PortfolioCard />
           <PortfolioCard />
         </div>

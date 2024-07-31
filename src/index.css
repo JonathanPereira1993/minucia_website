@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
@@ -34,4 +38,9 @@ body {
 .slick-track > .slick-slide > div {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+a:hover,
+a.active {
+  color: #53B6CB;
 }
