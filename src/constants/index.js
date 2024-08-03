@@ -21,6 +21,7 @@ export const navLinks = [
   },
   {
     page: "/projects",
+    href: "work-section",
     label: "Projetos",
   },
   {

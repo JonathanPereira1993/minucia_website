@@ -3,7 +3,26 @@ import CustomLink from "../CustomLink";
 import { motion } from "framer-motion";
 import { navLinks } from "../../constants";
 
+import { DropdownContext } from "../../App";
+
+import { useContext } from "react";
+
+import { useNavigate } from "react-router-dom";
+
 const MobileDropdown = () => {
+  const { dropdownOpened, setDropdownOpened } = useContext(DropdownContext);
+  const navigate = useNavigate();
+
+  const LinkOnClickHandler = () => {
+    if (dropdownOpened) {
+      setDropdownOpened(false);
+    }
+  };
+
+  const LinkOnClick = (to, sectionId) => {
+    navigate(to, { state: { sectionId } });
+  };
+
   const dropdownVars = {
     initial: {
       height: "0%",
@@ -32,7 +51,15 @@ const MobileDropdown = () => {
     >
       <div className="flex text-2xl flex-col gap-8">
         {navLinks.map((link, id) => (
-          <CustomLink key={id} to={link.page} sectionId={link.href}>
+          <CustomLink
+            onClick={() => {
+              LinkOnClickHandler();
+              LinkOnClick(link.page, link.href);
+            }}
+            key={id}
+            to={link.page}
+            sectionId={link.href}
+          >
             {link.label}
           </CustomLink>
         ))}

@@ -1,16 +1,8 @@
-import { useNavigate } from "react-router-dom";
-
 import PropTypes from "prop-types";
 
-const CustomLink = ({ to, sectionId, className, children }) => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(to, { state: { sectionId } });
-  };
-
+const CustomLink = ({ className, children, ...props }) => {
   return (
-    <button className={className} onClick={handleClick}>
+    <button className={className} {...props}>
       {children}
     </button>
   );
