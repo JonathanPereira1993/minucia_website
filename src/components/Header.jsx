@@ -1,7 +1,5 @@
 import Color_MinuciaLogo from "../assets/Logos/MinuciaLogo_Color.svg";
 
-import { FaBars } from "react-icons/fa6";
-
 import CustomLink from "./CustomLink";
 
 import { AnimatePresence } from "framer-motion";
@@ -62,8 +60,6 @@ const Header = () => {
     window.scrollTo(0, 0);
   };
 
-  console.log(activeSection);
-
   return (
     <header className="h-[100px] z-50 fixed top-0 left-0 right-0 bg-[#FFF] w-full px-20 max-lg:px-10 flex items-center justify-between shadow-md">
       <nav className="flex justify-between w-full h-full items-center max-w-[1600px] mx-auto">
@@ -112,8 +108,13 @@ const Header = () => {
         >
           Contacte-nos
         </CustomLink>
-        <button onClick={() => toggleDropdown()} className="lg:hidden">
-          <FaBars className="h-8 w-8" />
+        <button
+          onClick={() => toggleDropdown()}
+          className={`lg:hidden hamburger-menu ${
+            dropdownOpened && " dropdown--opened"
+          }`}
+        >
+          <input type="checkbox" />
         </button>
         <AnimatePresence>
           {dropdownOpened && <MobileDropdown />}

@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --animation-timing: 200ms ease-in-out;
+  --color-primary: #53B6CB;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -43,4 +48,54 @@ body {
 a:hover,
 a.active {
   color: #53B6CB;
+}
+
+/* Hamburger animation for mobile header */
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2.5rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after, 
+.hamburger-menu input {
+  display: block;
+  content: "";
+  width: 35px;
+  height: 4px;
+  transform-origin: right center;
+  border-radius: 9999px;
+  background-color: #000;
+  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing) ;
+}
+
+.hamburger-menu.dropdown--opened::before {
+  rotate: -45deg;
+}
+
+.hamburger-menu.dropdown--opened::after {
+  rotate: 45deg;
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: none;
+  margin: 0;
+  outline: none;
+  opacity: 1;
+  width: 100%;
+}
+
+.hamburger-menu.dropdown--opened input {
+  opacity: 0;
+  width: 0;
 }

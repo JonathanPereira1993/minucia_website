@@ -20,16 +20,16 @@ const FAQ = () => {
             alt="Small orange underline"
           />
         </h2>
-        <div className="mt-20 max-w-screen-lg mx-auto">
+        <div className="mt-20  mx-auto">
           <Accordion>
             <AccordionItem>
               <h2>
-                <AccordionButton>
-                  <span className="flex-1 text-left">Test</span>
-                  <AccordionIcon />
+                <AccordionButton h={16}>
+                  <span className="flex-1 text-left font-semibold">Test</span>
+                  <AccordionIcon color={"var(--color-primary)"} fontSize={30} />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>
+              <AccordionPanel py={6}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -38,12 +38,12 @@ const FAQ = () => {
             </AccordionItem>
             <AccordionItem>
               <h2>
-                <AccordionButton>
-                  <span className="flex-1 text-left">Test</span>
-                  <AccordionIcon />
+                <AccordionButton h={16}>
+                  <span className="flex-1 text-left font-semibold">Test</span>
+                  <AccordionIcon color={"var(--color-primary)"} fontSize={30} />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>
+              <AccordionPanel py={6}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -52,12 +52,12 @@ const FAQ = () => {
             </AccordionItem>
             <AccordionItem>
               <h2>
-                <AccordionButton>
-                  <span className="flex-1 text-left">Test</span>
-                  <AccordionIcon />
+                <AccordionButton h={16}>
+                  <span className="flex-1 text-left font-semibold">Test</span>
+                  <AccordionIcon color={"var(--color-primary)"} fontSize={30} />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>
+              <AccordionPanel py={6}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -66,12 +66,12 @@ const FAQ = () => {
             </AccordionItem>
             <AccordionItem>
               <h2>
-                <AccordionButton>
-                  <span className="flex-1 text-left">Test</span>
-                  <AccordionIcon />
+                <AccordionButton h={16}>
+                  <span className="flex-1 text-left font-semibold">Test</span>
+                  <AccordionIcon color={"var(--color-primary)"} fontSize={30} />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>
+              <AccordionPanel py={6}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris

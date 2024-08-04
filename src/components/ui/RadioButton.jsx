@@ -18,8 +18,8 @@ const RadioButton = ({ label, value }) => {
 
 // Props Validation
 RadioButton.propTypes = {
-  label: PropTypes.string,
-  value: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 export default RadioButton;
