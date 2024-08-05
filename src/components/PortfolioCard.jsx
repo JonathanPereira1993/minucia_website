@@ -1,46 +1,34 @@
-import Image1 from "../assets/ProjectsImages/IrmaosFerreira.jpg";
+import PropTypes from "prop-types";
 
-const PortfolioCard = () => {
+const PortfolioCard = ({ image, title, subtitle, year, description }) => {
   return (
-    <>
-      <div className="bg-white shadow-lg border min-h-[450px] max-lg:min-h-[380px] max-lg:p-6 p-10 rounded-lg relative">
-        <h2 className="text-4xl max-lg:text-2xl font-medium">
-          Irmãos Ferreira
+    <div className="group md:hover:scale-[102%] duration-300 flex border items-center w-full max-w-[650px] py-8 pl-8 pr-5 bg-white rounded-2xl shadow-md max-md:mx-[40px] max-md:pl-[50px] max-md:pr-[50px] pb-[60px] max-md:text-center max-md:flex-col">
+      <img
+        className="max-w-[280px] md:group-hover:scale-105 w-[32vw] h-[300px] shadow-md object-cover -ml-[60px] mr-[30px] rounded-2xl duration-300 max-md:-mt-[60px] max-md:mb-[30px] max-md:ml-0 max-md:mr-0 max-md:w-full max-md:max-w-[1000px] max-md:h-[250px]"
+        src={image}
+        alt={title}
+      />
+      <div>
+        <h2 className="text-2xl font-normal mt-0 mr-[30px] mb-[6px] max-md:mr-0">
+          {title}
         </h2>
-        <div className="flex items-start gap-10 mt-8 max-lg:mt-6 h-full">
-          <div className="flex flex-col h-[calc(100% - 40px)]">
-            <div className="space-y-4 max-lg:space-y-2 flex-1">
-              <p>
-                <strong>Tipo: </strong> Html & CSS
-              </p>
-              <p>
-                <strong>Link: </strong>
-                <a href="www.irmaosferreira.pt">www.irmaosferreira.pt</a>
-              </p>
-              <p>
-                <strong>Ano: </strong>
-                2018
-              </p>
-            </div>
-            {/* <div className="space-y-2 absolute max-lg:text-xl max-lg:right-6 max-lg:top-6 lg:left-10 lg:bottom-10">
-            <p>
-              <button className="underline hover:text-primary">Ver mais</button>
-            </p>
-          </div> */}
-          </div>
-          <div className="flex absolute w-1/2 right-10 top-1/2 -translate-y-1/2">
-            <div className="overflow-hidden  rounded-2xl shadow-xl top-0 bottom-0 right-0 left-[45%] max-lg:left-0 max-lg:top-[60%] max-lg:right-0 w-full">
-              <img
-                className="h-full w-full "
-                src={Image1}
-                alt="Irmaos Ferreira Website Print"
-              />
-            </div>
-          </div>
-        </div>
+        <h3 className="mt-0 mr-0 mb-[12px] opacity-[0.66]">{subtitle}</h3>
+        <p className="mb-[30px] opacity-[0.42] max-md:max-w-[250px]">
+          Ano: {year}
+        </p>
+        <p>{description}</p>
       </div>
-    </>
+    </div>
   );
+};
+
+// Props Validation
+PortfolioCard.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  year: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.image,
 };
 
 export default PortfolioCard;

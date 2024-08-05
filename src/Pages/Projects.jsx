@@ -1,3 +1,4 @@
+import Image1 from "../assets/ProjectsImages/IrmaosFerreira.jpg";
 import BlueUnderline from "../assets/Underlines/BlueUnderline.svg";
 
 import PortfolioCard from "../components/PortfolioCard";
@@ -14,11 +15,28 @@ const Projects = () => {
             alt="Small orange underline"
           />
         </h2>
-        <div className="grid max-xl:grid-cols-1 grid-cols-2 gap-8">
-          <PortfolioCard />
-          <PortfolioCard />
-          <PortfolioCard />
-          <PortfolioCard />
+        <div className="grid max-xl:grid-cols-1 place-items-center grid-cols-2 gap-9 max-md:gap-12">
+          <PortfolioCard
+            image={Image1}
+            title="Irmãos Ferreira"
+            subtitle="Website Corporativo"
+            year="2018"
+            description="Teste teste Irmãos Ferreira Teste teste"
+          />
+          <PortfolioCard
+            image={Image1}
+            title="Irmãos Ferreira"
+            subtitle="Website Corporativo"
+            year="2018"
+            description="Teste teste Irmãos Ferreira Teste teste"
+          />
+          <PortfolioCard
+            image={Image1}
+            title="Irmãos Ferreira"
+            subtitle="Website Corporativo"
+            year="2018"
+            description="Teste teste Irmãos Ferreira Teste teste"
+          />
         </div>
       </div>
     </section>
