@@ -28,7 +28,7 @@ PortfolioCard.propTypes = {
   subtitle: PropTypes.string,
   year: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.image,
+  image: () => {},
 };
 
 export default PortfolioCard;

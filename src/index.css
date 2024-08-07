@@ -99,3 +99,9 @@ a.active {
   opacity: 0;
   width: 0;
 }
+
+/* AccordionSelectorItem.css */
+
+.transition-max-height {
+  transition: max-height 0.4s ease-in-out;
+}

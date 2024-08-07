@@ -81,7 +81,7 @@ const Contacts = () => {
 
           <div className="flex items-center max-lg:hidden gap-10">
             <a
-              className="size-14 shadow-md flex justify-center rounded-[5px] items-center border-2 duration-150 border-primary hover:bg-primary text-primary hover:text-white"
+              className="size-14 active:shadow-none shadow-md flex justify-center rounded-[5px] items-center border-2 duration-150 border-primary hover:bg-primary text-primary hover:text-white"
               href="https://www.instagram.com/minucia.pt/"
             >
               <IoLogoInstagram className="size-6" />
@@ -92,7 +92,7 @@ const Contacts = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-white relative max-w-[700px] flex gap-10 flex-col rounded-xl shadow-xl max-lg:p-6 p-12"
+          className="bg-white relative max-w-[700px] flex gap-10 flex-col rounded-3xl shadow-xl max-lg:p-6 p-12"
           action="submit"
         >
           <label className="text-xl">Tenho interesse em serviços de...</label>

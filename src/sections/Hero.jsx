@@ -78,7 +78,7 @@ const Hero = () => {
             onClick={() => {
               scrollTo("contact-section");
             }}
-            className="px-7 py-3 min-w-[244px] max-lg:hover:text-white border-2 hover:lg:text-black hover:lg:bg-white border-primary hover:lg:border-[#000] max-lg:w-full text-center text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md"
+            className="px-7 active:shadow-none py-3 min-w-[244px] max-lg:hover:text-white border-2 hover:lg:text-black hover:lg:bg-white border-primary hover:lg:border-[#000] max-lg:w-full text-center text-xl font-light rounded-lg bg-primary text-white duration-200 hover:shadow-md"
           >
             Contacte-nos
           </Button>

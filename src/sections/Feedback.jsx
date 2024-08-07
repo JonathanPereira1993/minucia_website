@@ -86,11 +86,10 @@ const Feedback = () => {
           >
             <p className="text-lg">{slide.feedback}</p>
             <div className="flex items-center gap-6 mt-6">
-              <img
-                className="rounded-full w-16 h-16"
-                src={slide.photo}
-                alt={slide.author}
-              />
+              <div className="rounded-full overflow-hidden h-18 w-18 flex items-center justify-center shadow-md">
+                <img src={slide.photo} alt={slide.author} />
+              </div>
+
               <div>
                 <h3 className="text-lg">{slide.name}</h3>
                 <p className="text-[#475569]">{slide.area}</p>

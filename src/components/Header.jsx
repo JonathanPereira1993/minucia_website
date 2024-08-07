@@ -104,7 +104,7 @@ const Header = () => {
         </ul>
         <CustomLink
           onClick={() => LinkOnClick("/", "contact-section")}
-          className="px-7 max-lg:hidden py-3 rounded-lg border-2 border-[#2B2D2E] duration-200 hover:shadow-md hover:border-primary hover:text-white hover:bg-primary"
+          className="px-7 active:shadow-none max-lg:hidden py-3 rounded-lg border-2 border-[#2B2D2E] duration-200 hover:shadow-md hover:border-primary hover:text-white hover:bg-primary"
         >
           Contacte-nos
         </CustomLink>
