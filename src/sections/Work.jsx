@@ -31,10 +31,8 @@ const Work = () => {
                 Conheça os nossos projetos
               </h2>
               <p className="text-xl font-light leading-9 mb-10">
-                Morbi sit egestas dignissim pharetra, sed amet. Tempus justo
-                senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam
-                facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus
-                urna, faucibus aenean lorem faucibus integer.
+                Veja alguns dos nossos projetos e descubra como ajudámos
+                empresas a criar websites personalizados e eficazes.
               </p>
               <Button
                 onClick={() => handleClick()}

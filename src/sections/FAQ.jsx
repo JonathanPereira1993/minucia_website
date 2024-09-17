@@ -25,57 +25,70 @@ const FAQ = () => {
             <AccordionItem>
               <h2>
                 <AccordionButton h={16}>
-                  <span className="flex-1 text-left font-semibold">Test</span>
+                  <span className="flex-1 text-left font-semibold">
+                    Que serviços oferecem para o desenvolvimento de websites?
+                  </span>
                   <AccordionIcon color={"var(--color-primary)"} fontSize={30} />
                 </AccordionButton>
               </h2>
               <AccordionPanel py={6}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Oferecemos uma gama completa de serviços de desenvolvimento de
+                websites, incluindo design personalizado, desenvolvimento,
+                soluções de e-commerce, websites responsivos e amigáveis para
+                dispositivos móveis, e manutenção contínua. Adaptamos os nossos
+                serviços às necessidades específicas do seu negócio.
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem>
               <h2>
                 <AccordionButton h={16}>
-                  <span className="flex-1 text-left font-semibold">Test</span>
+                  <span className="flex-1 text-left font-semibold">
+                    Quanto tempo demora a criar um website?
+                  </span>
                   <AccordionIcon color={"var(--color-primary)"} fontSize={30} />
                 </AccordionButton>
               </h2>
               <AccordionPanel py={6}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                O tempo necessário para criar um website depende da complexidade
+                do projeto e das funcionalidades desejadas. Em média, um website
+                standard demora entre 4 a 6 semanas para ser desenhado e
+                desenvolvido. No entanto, websites maiores ou mais
+                personalizados podem demorar mais tempo.
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem>
               <h2>
                 <AccordionButton h={16}>
-                  <span className="flex-1 text-left font-semibold">Test</span>
+                  <span className="flex-1 text-left font-semibold">
+                    Podem ajudar com atualizações e manutenção do website depois
+                    de estar online?
+                  </span>
                   <AccordionIcon color={"var(--color-primary)"} fontSize={30} />
                 </AccordionButton>
               </h2>
               <AccordionPanel py={6}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Claro! Oferecemos serviços contínuos de manutenção de websites
+                para garantir que o seu site esteja sempre seguro, atualizado e
+                a funcionar sem problemas. Quer necessite de atualizações de
+                conteúdo, suporte técnico ou atualizações de software, estamos
+                aqui para ajudar.
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem>
               <h2>
                 <AccordionButton h={16}>
-                  <span className="flex-1 text-left font-semibold">Test</span>
+                  <span className="flex-1 text-left font-semibold">
+                    O meu website será otimizado para dispositivos móveis?
+                  </span>
                   <AccordionIcon color={"var(--color-primary)"} fontSize={30} />
                 </AccordionButton>
               </h2>
               <AccordionPanel py={6}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Sim, todos os websites que criamos são totalmente responsivos e
+                otimizados para dispositivos móveis. Garantimos que o seu site
+                terá uma aparência excelente e funcionará perfeitamente em
+                computadores, tablets e smartphones, proporcionando a melhor
+                experiência aos seus visitantes.
               </AccordionPanel>
             </AccordionItem>
           </Accordion>

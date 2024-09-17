@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <p>Teste</p>
+          <p></p>
         </div>
       </div>
     </footer>

@@ -47,10 +47,7 @@ const About = () => {
           />
         </h2>
         <p className="text-center relative z-20 mt-10 mb-20 max-lg:mb-10">
-          Lorem ipsum dolor sit amet consectetur. Et quis rutrum hac diam
-          sagittis viverra. Aliquet aliquam ipsum metus arcu amet purus. Tortor
-          turpis morbi leo porttitor odio sed urna felis cras. Nec ornare
-          feugiat in ornare diam in.
+          Excelência nos detalhes, criando websites que fazem a diferença.
         </p>
         <WindowDisplay />
       </div>

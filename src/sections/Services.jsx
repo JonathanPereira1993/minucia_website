@@ -17,8 +17,8 @@ const Services = () => {
           />
         </h2>
         <p className="text-center relative z-20 mt-10 mb-20 max-lg:mb-10">
-          Eget at purus mauris euismod metus vitae eget. Diam massa venenatis
-          pellentesque facilisis nunc, varius.
+          Descubra as soluções que oferecemos para transformar a presença online
+          do seu negócio.
         </p>
 
         <ServiceSelectorProvider>
