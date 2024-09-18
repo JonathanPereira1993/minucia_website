@@ -42,25 +42,25 @@ export const aboutItems = [
     id: 0,
     title: "Quem somos nós?",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Et quis rutrum hac diam sagittis viverra. Aliquet aliquam ipsum metus arcu amet purus. Tortor turpis morbi leo porttitor odio sed urna felis cras. Nec ornare feugiat in ornare diam in.",
+      "Somos uma equipa jovem e dinâmica, especializada no desenvolvimento de websites modernos e funcionais. Com criatividade e inovação, ajudamos empresas a criar uma presença digital forte e personalizada, adaptada às suas necessidades. O nosso foco está em entregar soluções que sejam intuitivas, esteticamente apelativas e eficazes para os nossos clientes.",
   },
   {
     id: 1,
     title: "A nossa visão e missão",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Et quis rutrum hac diam sagittis viverra. Aliquet aliquam ipsum metus arcu amet purus. Tortor turpis morbi leo porttitor odio sed urna felis cras. Nec ornare feugiat in ornare diam in.",
+      "A nossa missão é criar websites que ajudam empresas a destacar-se online. Valorizamos a criatividade, inovação e qualidade, trabalhando em colaboração com os nossos clientes para garantir resultados eficazes, dentro dos prazos.",
   },
   {
     id: 2,
     title: "Os nossos valores",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Et quis rutrum hac diam sagittis viverra. Aliquet aliquam ipsum metus arcu amet purus. Tortor turpis morbi leo porttitor odio sed urna felis cras. Nec ornare feugiat in ornare diam in.",
+      "Os nossos valores são a criatividade, inovação, e qualidade. Trabalhamos com foco na colaboração e no compromisso, garantindo soluções eficazes e entregues dentro dos prazos.",
   },
   {
     id: 3,
     title: "O nosso método de trabalho",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Et quis rutrum hac diam sagittis viverra. Aliquet aliquam ipsum metus arcu amet purus. Tortor turpis morbi leo porttitor odio sed urna felis cras. Nec ornare feugiat in ornare diam in.",
+      "O nosso método de trabalho é baseado na colaboração próxima com os clientes. Começamos por entender as suas necessidades e objetivos, desenvolvendo um plano personalizado. A partir daí, criamos websites funcionais e modernos, sempre com feedback contínuo, garantindo que o resultado final reflete a visão do cliente. Mantemo-nos ágeis, respeitando prazos e entregando soluções de alta qualidade.",
   },
 ];
 
