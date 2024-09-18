@@ -8,15 +8,15 @@ const Services = () => {
   return (
     <section id="service-section" className="py-20 max-lg:py-10">
       <div className="lg:max-w-[1600px] mx-auto px-10 relative">
-        <h2 className="text-center z-20 flex justify-center text-6xl font-semibold relative">
+        <h2 className="text-center z-20 flex justify-center text-6xl max-lg:text-4xl font-semibold relative">
           <span className="z-10">Serviços</span>
           <img
-            className="absolute bottom-0 left-1/2 translate-y-[16px] -translate-x-[80px] z-0"
+            className="absolute max-lg:hidden bottom-0 left-1/2 translate-y-[16px] -translate-x-[80px] z-0"
             src={BlueUnderline}
             alt="Small orange underline"
           />
         </h2>
-        <p className="text-center relative z-20 mt-10 mb-20 max-lg:mb-10">
+        <p className="text-center relative z-20 mt-10 mb-20 max-lg:mt-4 max-lg:mb-10">
           Descubra as soluções que oferecemos para transformar a presença online
           do seu negócio.
         </p>

@@ -63,6 +63,7 @@ a.active {
   right: 2.5rem;
   z-index: 2;
   cursor: pointer;
+  padding: 12px;
 }
 
 .hamburger-menu::before,

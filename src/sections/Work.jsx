@@ -27,10 +27,10 @@ const Work = () => {
               ))}
             </div>
             <div className="flex flex-col justify-center h-full">
-              <h2 className="text-6xl font-semibold leading-[61px] mb-10">
+              <h2 className="text-6xl max-lg:text-4xl font-semibold leading-[61px] mb-10">
                 Conheça os nossos projetos
               </h2>
-              <p className="text-xl font-light leading-9 mb-10">
+              <p className="text-xl font-light leading-9 mb-10 ">
                 Veja alguns dos nossos projetos e descubra como ajudámos
                 empresas a criar websites personalizados e eficazes.
               </p>

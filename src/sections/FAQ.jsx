@@ -12,19 +12,19 @@ const FAQ = () => {
   return (
     <section id="faq-section" className="py-4">
       <div className="lg:max-w-[1600px] mx-auto relative px-10 py-20">
-        <h2 className="text-center z-20 flex justify-center text-6xl font-semibold relative">
+        <h2 className="text-center z-20 flex justify-center text-6xl max-lg:text-4xl font-semibold relative">
           <span className="z-10">Perguntas Frequentes</span>
           <img
-            className="absolute bottom-0 left-1/2 translate-y-[16px] -translate-x-[80px] z-0"
+            className="absolute max-lg:hidden bottom-0 left-1/2 translate-y-[16px] -translate-x-[80px] z-0"
             src={BlueUnderline}
             alt="Small orange underline"
           />
         </h2>
-        <div className="mt-20  mx-auto">
-          <Accordion>
+        <div className="mt-20 max-lg:mt-6 mx-auto">
+          <Accordion allowToggle>
             <AccordionItem>
               <h2>
-                <AccordionButton h={16}>
+                <AccordionButton py={6}>
                   <span className="flex-1 text-left font-semibold">
                     Que serviços oferecem para o desenvolvimento de websites?
                   </span>
@@ -41,7 +41,7 @@ const FAQ = () => {
             </AccordionItem>
             <AccordionItem>
               <h2>
-                <AccordionButton h={16}>
+                <AccordionButton py={6}>
                   <span className="flex-1 text-left font-semibold">
                     Quanto tempo demora a criar um website?
                   </span>
@@ -58,7 +58,7 @@ const FAQ = () => {
             </AccordionItem>
             <AccordionItem>
               <h2>
-                <AccordionButton h={16}>
+                <AccordionButton py={6}>
                   <span className="flex-1 text-left font-semibold">
                     Podem ajudar com atualizações e manutenção do website depois
                     de estar online?
@@ -76,7 +76,7 @@ const FAQ = () => {
             </AccordionItem>
             <AccordionItem>
               <h2>
-                <AccordionButton h={16}>
+                <AccordionButton py={6}>
                   <span className="flex-1 text-left font-semibold">
                     O meu website será otimizado para dispositivos móveis?
                   </span>

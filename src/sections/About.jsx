@@ -38,15 +38,15 @@ const About = () => {
             alt="Blue bean"
           />
         </div>
-        <h2 className="text-center z-20 flex justify-center text-6xl font-semibold relative">
+        <h2 className="text-center z-20 flex justify-center max-lg:text-4xl text-6xl font-semibold relative">
           <span className="z-10">A Minucia</span>
           <img
-            className="absolute bottom-0 left-1/2 translate-y-[4px] -translate-x-[170px] z-0"
+            className="absolute max-lg:hidden bottom-0 left-1/2 translate-y-[4px] -translate-x-[170px] z-0"
             src={smallOrangeUnderline}
             alt="Small orange underline"
           />
         </h2>
-        <p className="text-center relative z-20 mt-10 mb-20 max-lg:mb-10">
+        <p className="text-center relative z-20 mt-10 mb-20 max-lg:mt-4 max-lg:mb-10">
           Excelência nos detalhes, criando websites que fazem a diferença.
         </p>
         <WindowDisplay />
