@@ -28,9 +28,9 @@ const Minucia = () => {
       <About />
       <Services />
       <Work />
-      <Feedback />
-      <Contacts />
+      {/* <Feedback /> */}
       <FAQ />
+      <Contacts />
     </>
   );
 };
