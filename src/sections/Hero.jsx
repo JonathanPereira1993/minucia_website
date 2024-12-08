@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
 import Button from "../components/ui/Button";
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 import { ScrollTo } from "../components/CustomFuntions/CustomFunctions";
 
 // Images (Shapes)
+import { useEffect, useState } from "react";
 import TreeDBox from "../assets/CustomIcons/3DBox.svg";
 import CodeSymbol from "../assets/CustomIcons/SymbolCode.svg";
 import ThunderCloud from "../assets/CustomIcons/ThunderCloud.svg";
@@ -17,15 +18,20 @@ import OrangeMiniShapes2 from "../assets/Shapes/OrangeMiniShapes2.svg";
 import BlueUnderline from "../assets/Underlines/BlueUnderline.svg";
 
 const Hero = () => {
-  const navigate = useNavigate();
+  const [hasAnimated, setHasAnimated] = useState(false);
+  // const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/projects");
-  };
+  // const handleClick = () => {
+  //   navigate("/projects");
+  // };
 
   const scrollTo = (sectionId) => {
     ScrollTo(sectionId);
   };
+
+  useEffect(() => {
+    setHasAnimated(true);
+  }, [hasAnimated]);
 
   return (
     <section
@@ -35,16 +41,20 @@ const Hero = () => {
       <div className="lg:max-w-[600px] max-lg:max-w-full h-[530px] my-auto max-lg:mx-auto">
         <h1 className="flex flex-col items-start text-7xl">
           <motion.span
-            animate={{ opacity: 1 }}
-            transition={{ type: "spring", delay: 0, duration: 2 }}
+            animate={!hasAnimated && { opacity: 1 }}
+            transition={
+              !hasAnimated && { type: "spring", delay: 0, duration: 2 }
+            }
             className="uppercase opacity-0 font-base text-[#475569] text-xl mb-2"
           >
             Bem vindo à
           </motion.span>
           <motion.span
             className="opacity-0 relative font-medium"
-            animate={{ opacity: 1 }}
-            transition={{ type: "spring", delay: 1, duration: 2 }}
+            animate={!hasAnimated && { opacity: 1 }}
+            transition={
+              !hasAnimated && { type: "spring", delay: 1, duration: 2 }
+            }
           >
             Minucia
             <img
@@ -55,23 +65,25 @@ const Hero = () => {
           </motion.span>
           <motion.span
             className="opacity-0 font-normal text-6xl max-lg:text-4xl mt-1"
-            animate={{ opacity: 1 }}
-            transition={{ type: "spring", delay: 1.5, duration: 2 }}
+            animate={!hasAnimated && { opacity: 1 }}
+            transition={
+              !hasAnimated && { type: "spring", delay: 1.5, duration: 2 }
+            }
           >
             Web Development
           </motion.span>
         </h1>
         <motion.p
           className="opacity-0 mt-10 max-w-[500px] text-xl font-light"
-          animate={{ opacity: 1 }}
-          transition={{ type: "spring", delay: 2, duration: 2 }}
+          animate={!hasAnimated && { opacity: 1 }}
+          transition={!hasAnimated && { type: "spring", delay: 2, duration: 2 }}
         >
           Transformamos visões em experiências digitais excepcionais. Descubra a
           Minúcia, onde cada detalhe faz a diferença na sua presença online.
         </motion.p>
         <motion.div
-          animate={{ opacity: 1 }}
-          transition={{ type: "spring", delay: 2, duration: 2 }}
+          animate={!hasAnimated && { opacity: 1 }}
+          transition={!hasAnimated && { type: "spring", delay: 2, duration: 2 }}
           className="flex items-center max-lg:flex-col justify-between mt-10 gap-10 opacity-0"
         >
           <Button
@@ -84,7 +96,7 @@ const Hero = () => {
           </Button>
           <Button
             onClick={() => {
-              handleClick();
+              scrollTo("work-section");
             }}
             className="group max-lg:w-full max-lg:justify-center text-center items-center flex gap-6 text-[#3B8291] text-xl min-w-[244px]"
           >

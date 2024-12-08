@@ -1,16 +1,31 @@
+import { useRef, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import Button from "../components/ui/Button";
 
-import { useNavigate } from "react-router-dom";
+import Modal from "../components/ui/Modal";
 
+// import { useNavigate } from "react-router-dom";
+
+import PortfolioCard from "../components/PortfolioCard";
 import { minuciaProjects } from "../constants";
 
 const Work = () => {
-  const navigate = useNavigate();
+  const [openModal, setOpenModal] = useState(false);
+  const modalRef = useRef();
+  // const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/projects");
+  // const handleClick = () => {
+  //   navigate("/projects");
+  // };
+
+  const openModalHandler = () => {
+    modalRef.current.openModal();
   };
+
+  const closeModalHandler = () => {
+    setOpenModal(false);
+  };
+
   return (
     <section id="work-section" className="bg-lightBlue py-20 max-lg:py-10">
       <div className="lg:max-w-[1600px] mx-auto relative px-10 py-20 max-lg:py-10">
@@ -35,12 +50,34 @@ const Work = () => {
                 empresas a criar websites personalizados e eficazes.
               </p>
               <Button
-                onClick={() => handleClick()}
+                onClick={openModalHandler}
                 className="group flex items-center gap-6 text-[#3B8291] text-xl min-w-[244px]"
               >
                 Os nossos projetos
                 <FaArrowRight className="text-accent duration-300 group-hover:translate-x-2" />
               </Button>
+              <Modal
+                ref={modalRef}
+                open={openModal}
+                onClose={closeModalHandler}
+                className="p-10"
+              >
+                <h2 className="text-center mb-20 z-20 flex justify-center text-6xl font-semibold relative">
+                  <span className="z-10">Projetos</span>
+                </h2>
+                <div className="grid max-xl:grid-cols-1 place-items-center grid-rows-[mansory] grid-cols-2 gap-9 max-md:gap-12">
+                  {minuciaProjects.map((project) => (
+                    <PortfolioCard
+                      key={project.id}
+                      image={project.image}
+                      title={project.title}
+                      subtitle={project.subtitle}
+                      year={project.year}
+                      description={project.description}
+                    />
+                  ))}
+                </div>
+              </Modal>
             </div>
           </div>
         </div>

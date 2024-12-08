@@ -88,9 +88,9 @@ const WindowDisplay = () => {
       <div className="z-10 relative max-w-[1200px] overflow-hidden rounded-xl shadow-lg mx-auto">
         <div className="h-[40px] rounded-t-xl max-lg:hidden bg-white flex justify-between items-center px-4">
           <div className="flex max-lg:hidden items-center gap-2">
-            <div className="w-[10px] h-[10px] bg-red-500 rounded-full cursor-pointer hover:brightness-110" />
-            <div className="w-[10px] h-[10px] bg-yellow-500 rounded-full cursor-pointer hover:brightness-110" />
-            <div className="w-[10px] h-[10px] bg-green-500 rounded-full cursor-pointer hover:brightness-110" />
+            <div className="w-[12px] h-[12px] bg-red-500 rounded-full cursor-pointer hover:brightness-110" />
+            <div className="w-[12px] h-[12px] bg-yellow-500 rounded-full cursor-pointer hover:brightness-110" />
+            <div className="w-[12px] h-[12px] bg-green-500 rounded-full cursor-pointer hover:brightness-110" />
           </div>
           <div className="bg-lightBlue max-lg:w-1/2 text-[#94A3B8] font-light w-[40%] text-center rounded-md">
             minucia.pt

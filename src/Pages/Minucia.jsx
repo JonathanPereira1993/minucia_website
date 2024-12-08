@@ -1,7 +1,7 @@
 import About from "../sections/About";
 import Contacts from "../sections/Contacts";
 import FAQ from "../sections/FAQ";
-import Feedback from "../sections/Feedback";
+
 import Hero from "../sections/Hero";
 import Services from "../sections/Services";
 import Work from "../sections/Work";
@@ -28,7 +28,6 @@ const Minucia = () => {
       <About />
       <Services />
       <Work />
-      {/* <Feedback /> */}
       <FAQ />
       <Contacts />
     </>
