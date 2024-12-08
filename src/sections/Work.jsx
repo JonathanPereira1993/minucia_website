@@ -4,19 +4,12 @@ import Button from "../components/ui/Button";
 
 import Modal from "../components/ui/Modal";
 
-// import { useNavigate } from "react-router-dom";
-
 import PortfolioCard from "../components/PortfolioCard";
 import { minuciaProjects } from "../constants";
 
 const Work = () => {
   const [openModal, setOpenModal] = useState(false);
   const modalRef = useRef();
-  // const navigate = useNavigate();
-
-  // const handleClick = () => {
-  //   navigate("/projects");
-  // };
 
   const openModalHandler = () => {
     modalRef.current.openModal();
@@ -61,10 +54,8 @@ const Work = () => {
                 open={openModal}
                 onClose={closeModalHandler}
                 className="p-10"
+                title="Projects"
               >
-                <h2 className="text-center mb-20 z-20 flex justify-center text-6xl font-semibold relative">
-                  <span className="z-10">Projetos</span>
-                </h2>
                 <div className="grid max-xl:grid-cols-1 place-items-center grid-rows-[mansory] grid-cols-2 gap-9 max-md:gap-12">
                   {minuciaProjects.map((project) => (
                     <PortfolioCard
