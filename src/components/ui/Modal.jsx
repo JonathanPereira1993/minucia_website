@@ -56,6 +56,8 @@ const Modal = forwardRef(
 
     return createPortal(
       <AnimatePresence>
+        {open && <div className="fixed inset-0 bg-black z-[999] opacity-50" />}
+
         <motion.dialog
           ref={dialog}
           className={`modal relative ${className}`}
@@ -65,13 +67,13 @@ const Modal = forwardRef(
           animate="visible"
           exit="exit"
         >
-          <div className="absolute h-[150px] bg-white top-0 right-0 left-0 flex justify-end z-50">
-            <button
-              className="absolute top-6 right-6 border-0 flex items-center justify-center w-10 h-10 text-right hover:rotate-90 transition-all duration-300"
-              onClick={() => dialog.current?.close()}
-            >
-              <IoCloseOutline className="w-8 h-8" />
-            </button>
+          <button
+            className="float-right border-0 z-50 flex items-center justify-center w-10 h-10 text-right hover:rotate-90 transition-all duration-300"
+            onClick={() => dialog.current?.close()}
+          >
+            <IoCloseOutline className="w-8 h-8" />
+          </button>
+          <div className=" h-[150px] bg-white top-0 right-0 left-0 flex justify-end z-50">
             {title && (
               <div className="flex items-center justify-center w-full mb-4">
                 <h2>{title}</h2>

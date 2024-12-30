@@ -35,10 +35,6 @@ h2 {
   animation: fade-slide-up 0.3s ease-out forwards;
 }
 
-.modal::backdrop {
-  background-color: rgba(0, 0, 0, 0.55);
-}
-
 /* Css for the carousel */
 .slick-track > .slick-slide > div {
   margin-left: 10px;
